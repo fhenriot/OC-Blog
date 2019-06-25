@@ -5,8 +5,11 @@
 }" [ngStyle]="{color: getColor()}">
   <div>
     <div >
-      <h4 class="d-inline-block">{{postItem.title}}</h4>
-      <em class="d-inline-block">{{postItem.createdAt | date: 'short'}}</em>
+      <h4 class="d-inline-block">
+        {{postItem.title}}
+      </h4>
+      <em class="d-inline-block"><button class="btn btn-danger" (click)="onRemovePost()">-</button></em>
+      <em class="d-inline-block" style="margin-right: 10px;">{{postItem.createdAt | date: 'short'}}</em>
     </div>
     <p>
       {{postItem.content}}

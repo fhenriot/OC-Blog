@@ -7,6 +7,7 @@ import { PostListItemComponentComponent } from './post-list-item-component/post-
 
 import {registerLocaleData, ɵregisterLocaleData} from '@angular/common';
 import localeFR from '@angular/common/locales/fr';
+import {PostsService} from './services/posts.service';
 
 registerLocaleData(localeFR);
 
@@ -23,7 +24,8 @@ registerLocaleData(localeFR);
     {
       provide: LOCALE_ID,
       useValue: 'fr'
-    }
+    },
+    PostsService
   ],
   bootstrap: [AppComponent]
 })
