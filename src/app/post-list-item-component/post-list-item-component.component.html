@@ -8,7 +8,9 @@
       <h4 class="d-inline-block">
         {{postItem.title}}
       </h4>
-      <em class="d-inline-block"><button class="btn btn-danger" (click)="onRemovePost()">-</button></em>
+      <em class="d-inline-block">
+        <img class="remove-item" (click)="onRemovePost()" src="../../assets/icons/trash-alt-solid.svg" alt="poubelle">
+      </em>
       <em class="d-inline-block" style="margin-right: 10px;">{{postItem.createdAt | date: 'short'}}</em>
     </div>
     <p>

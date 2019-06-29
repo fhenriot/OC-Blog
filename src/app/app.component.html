@@ -1,3 +1,23 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-post-list-component></app-post-list-component>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ollapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" routerLinkActive="active"><a routerLink="/posts" class="nav-link">Liste des posts</a></li>
+      <li class="nav-item" routerLinkActive="active"><a routerLink="/add" class="nav-link">Créer un post</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
 
