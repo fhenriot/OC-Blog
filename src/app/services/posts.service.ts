@@ -35,7 +35,6 @@ export class PostsService {
   }
 
   removePost(index: number) {
-    console.log(index);
     this.posts.splice(index, 1);
     this.saveToFirebase();
   }
