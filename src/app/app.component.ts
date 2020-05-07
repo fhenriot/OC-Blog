@@ -10,7 +10,7 @@ export class AppComponent {
 
   constructor() {
     const firebaseConfig = {
-      apiKey: 'AIzaSyBnGgdqoQ1MqY_sp59bKkoldAb_rhcmFWU',
+      apiKey: '/*TODO*/',
       authDomain: 'oc-blog-6b949.firebaseapp.com',
       databaseURL: 'https://oc-blog-6b949.firebaseio.com',
       projectId: 'oc-blog-6b949',
